@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
   <bookmarks list=""/>
-  <node name="Python" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1603816217" ts_lastsave="1611470175">
+  <node name="Python" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1603816217" ts_lastsave="1611356228">
     <node name="Datascience" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1603816262" ts_lastsave="1610925274">
       <rich_text>
 </rich_text>
@@ -1036,7 +1036,6 @@ print(differences)</codebox>
         <rich_text scale="h3">		it's a full fledged web page</rich_text>
       </node>
     </node>
-    <node name="Graphics" unique_id="34" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611470175" ts_lastsave="1611470175"/>
   </node>
   <node name="Blender" unique_id="32" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611356228" ts_lastsave="1611377303">
     <rich_text scale="h1">Little shortcuts notes</rich_text>
