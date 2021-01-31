@@ -1887,7 +1887,7 @@ plt.show()
         <rich_text scale="h2">
 		it's a full fledged web page</rich_text>
         <codebox char_offset="47" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="sh" highlight_brackets="1" show_line_numbers="1">flask run</codebox>
-        <node name="Web services" unique_id="44" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611714112" ts_lastsave="1611949108">
+        <node name="Web services" unique_id="44" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611714112" ts_lastsave="1611715682">
           <rich_text scale="h1">All communications between everything in the internet is sent by text
 </rich_text>
           <rich_text scale="h2">   ◇ So we use json, XML, HTML, etc. to send data even images or videos </rich_text>
@@ -1925,7 +1925,6 @@ plt.show()
           <rich_text>
 </rich_text>
           <rich_text scale="h2">      ▪ This response it's the resource and the status code of the request</rich_text>
-          <node name="Restful API" unique_id="49" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611949108" ts_lastsave="1611949108"/>
         </node>
       </node>
     </node>
@@ -1942,9 +1941,7 @@ plt.show()
 </rich_text>
     <rich_text scale="h2">	We apply a transformation with ctrl a and apply it to rotate and scale</rich_text>
   </node>
-  <node name="Unity/C#" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1603816319" ts_lastsave="1611979642">
-    <node name="Member variables for game sate" unique_id="50" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611979656" ts_lastsave="1611979656"/>
-  </node>
+  <node name="Unity/C#" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1603816319" ts_lastsave="1603816319"/>
   <node name="Golang" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1603816221" ts_lastsave="1603816230"/>
   <node name="React" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1603816230" ts_lastsave="1603816242"/>
   <node name="Android/Kotlin" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1603816242" ts_lastsave="1603816250"/>
