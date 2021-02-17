@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
   <bookmarks list=""/>
-  <node name="Python" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1603816217" ts_lastsave="1611714764">
+  <node name="Python" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1603816217" ts_lastsave="1613534201">
     <rich_text>
 </rich_text>
     <rich_text link="node 7" scale="h1">Datascience</rich_text>
-    <node name="Datascience" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1603816262" ts_lastsave="1611685376">
+    <node name="Datascience" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1603816262" ts_lastsave="1613060594">
       <rich_text scale="h1">Some notes from datascience from data camp courses and books</rich_text>
       <rich_text>
 	</rich_text>
@@ -22,6 +22,11 @@
 </rich_text>
       <rich_text scale="h1">	</rich_text>
       <rich_text link="node 39" scale="h1">Unsupervised Learning</rich_text>
+      <rich_text>
+	</rich_text>
+      <rich_text link="node 60" scale="h1">Linear Classifiers in Python</rich_text>
+      <rich_text>
+</rich_text>
       <node name="Machine learning KNN" unique_id="13" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1604932323" ts_lastsave="1611685407">
         <rich_text scale="h1">Course contents</rich_text>
         <rich_text>
@@ -886,7 +891,7 @@ ridge_cv = cross_val_score(ridge, X, y, cv = 5)
 print(ridge_cv)
 </codebox>
           </node>
-          <node name="Handling missing data" unique_id="37" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611620803" ts_lastsave="1611624730">
+          <node name="Handling missing data" unique_id="37" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611620803" ts_lastsave="1613059186">
             <rich_text scale="h1">We deal with missing data with multiple methods</rich_text>
             <rich_text>
 </rich_text>
@@ -919,7 +924,8 @@ print(ridge_cv)
 
 </rich_text>
             <rich_text link="webs https://campus.datacamp.com/courses/supervised-learning-with-scikit-learn/preprocessing-and-pipelines?ex=8" scale="h1">Imputing missing data in a ML Pipeline II</rich_text>
-            <rich_text>	</rich_text>
+            <rich_text>	
+</rich_text>
             <rich_text justification="left"></rich_text>
             <codebox char_offset="419" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="python" highlight_brackets="1" show_line_numbers="1"># Convert '?' to NaN
 df[df == '?'] = np.nan
@@ -949,7 +955,7 @@ clf = SVC()
 # Setup the pipeline with the required steps: steps
 steps = [('imputation', imp),
         ('SVM', clf)]</codebox>
-            <codebox char_offset="509" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="python" highlight_brackets="1" show_line_numbers="1"># Import necessary modules
+            <codebox char_offset="510" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="python" highlight_brackets="1" show_line_numbers="1"># Import necessary modules
 from sklearn.preprocessing import Imputer
 from sklearn.pipeline import Pipeline
 from sklearn.svm import SVC
@@ -974,7 +980,7 @@ y_pred = pipeline.predict(X_test)
 print(classification_report(y_test, y_pred))
 </codebox>
           </node>
-          <node name="Centering and scaling" unique_id="38" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611620812" ts_lastsave="1611627599">
+          <node name="Centering and scaling" unique_id="38" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611620812" ts_lastsave="1613059195">
             <rich_text scale="h1">We scale our data to normalize it</rich_text>
             <rich_text>
 </rich_text>
@@ -990,13 +996,15 @@ print(classification_report(y_test, y_pred))
 	
 </rich_text>
             <rich_text link="webs https://campus.datacamp.com/courses/supervised-learning-with-scikit-learn/preprocessing-and-pipelines?ex=11" scale="h1">Centering and scaling in a pipeline</rich_text>
-            <rich_text>	</rich_text>
+            <rich_text>
+	</rich_text>
             <rich_text justification="left"></rich_text>
             <rich_text>
 
 </rich_text>
             <rich_text link="webs https://campus.datacamp.com/courses/supervised-learning-with-scikit-learn/preprocessing-and-pipelines?ex=12" scale="h1">Bringing it all together I: Pipeline for classification</rich_text>
-            <rich_text>	</rich_text>
+            <rich_text>	
+</rich_text>
             <rich_text justification="left"></rich_text>
             <rich_text>
 
@@ -1018,7 +1026,7 @@ print("Standard Deviation of Unscaled Features: {}".format(np.std(X)))
 # Print the mean and standard deviation of the scaled features
 print("Mean of Scaled Features: {}".format(np.mean(X_scaled))) 
 print("Standard Deviation of Scaled Features: {}".format(np.std(X_scaled)))</codebox>
-            <codebox char_offset="261" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="python" highlight_brackets="1" show_line_numbers="1"># Import the necessary modules
+            <codebox char_offset="262" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="python" highlight_brackets="1" show_line_numbers="1"># Import the necessary modules
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 
@@ -1042,7 +1050,7 @@ knn_unscaled = KNeighborsClassifier().fit(X_train, y_train)
 print('Accuracy with Scaling: {}'.format(knn_scaled.score(X_test, y_test)))
 print('Accuracy without Scaling: {}'.format(knn_unscaled.score(X_test, y_test)))
 </codebox>
-            <codebox char_offset="320" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="python" highlight_brackets="1" show_line_numbers="1"># Setup the pipeline
+            <codebox char_offset="322" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="python" highlight_brackets="1" show_line_numbers="1"># Setup the pipeline
 steps = [('scaler', StandardScaler()),
          ('SVM', SVC())]
 
@@ -1069,7 +1077,7 @@ print("Accuracy: {}".format(cv.score(X_test, y_test)))
 print(classification_report(y_test, y_pred))
 print("Tuned Model Parameters: {}".format(cv.best_params_))
 </codebox>
-            <codebox char_offset="377" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="python" highlight_brackets="1" show_line_numbers="1"># Setup the pipeline steps: steps
+            <codebox char_offset="379" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="python" highlight_brackets="1" show_line_numbers="1"># Setup the pipeline steps: steps
 steps = [('imputation', Imputer(missing_values='NaN', strategy='mean', axis=0)),
          ('scaler', StandardScaler()),
          ('elasticnet', ElasticNet())]
@@ -2613,8 +2621,31 @@ for component in model.components_:
           </node>
         </node>
       </node>
+      <node name="Linear Classifiers in Python" unique_id="60" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613060579" ts_lastsave="1613061927">
+        <node name="Applying logistic regression and SVM" unique_id="61" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613061921" ts_lastsave="1613061984">
+          <node name="scikit-lear refresher" unique_id="65" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613061984" ts_lastsave="1613062040"/>
+          <node name="Applying logistic regression adn SVM" unique_id="66" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613062040" ts_lastsave="1613062054"/>
+          <node name="Linear classifiers" unique_id="67" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613062054" ts_lastsave="1613062054"/>
+        </node>
+        <node name="Loss functions" unique_id="62" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613061927" ts_lastsave="1613062080">
+          <node name="Linear classifiers: the coefficients" unique_id="68" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613062080" ts_lastsave="1613062120"/>
+          <node name="What is a loss function" unique_id="71" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613062120" ts_lastsave="1613062134"/>
+          <node name="Loss function diagrams" unique_id="72" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613062134" ts_lastsave="1613062134"/>
+        </node>
+        <node name="Logistic regression" unique_id="63" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613061933" ts_lastsave="1613062222">
+          <node name="Logistic regression and regularization" unique_id="73" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613062195" ts_lastsave="1613062208"/>
+          <node name="Logistic regression and probabilities" unique_id="74" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613062208" ts_lastsave="1613062208"/>
+          <node name="Multi-class logistic regression" unique_id="75" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613062222" ts_lastsave="1613062222"/>
+        </node>
+        <node name="Support Vector Machines" unique_id="64" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613061943" ts_lastsave="1613062237">
+          <node name="Support vectors" unique_id="76" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613062237" ts_lastsave="1613062245"/>
+          <node name="Kernel SVMs" unique_id="77" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613062245" ts_lastsave="1613062255"/>
+          <node name="Comparing ligistic regression and SVM" unique_id="78" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613062255" ts_lastsave="1613062255"/>
+        </node>
+      </node>
     </node>
-    <node name="WebDevelopment" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1603816286" ts_lastsave="1611292987">
+    <node name="WebDevelopment" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1603816286" ts_lastsave="1613450185">
+      <rich_text scale="h2">It has flask and django information or a little bit of guidance since im a lazy idiot</rich_text>
       <node name="Flask" unique_id="31" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611292987" ts_lastsave="1612244503">
         <rich_text scale="h1">This are my notes for flask basics </rich_text>
         <rich_text>
@@ -2769,7 +2800,128 @@ for component in model.components_:
         </node>
       </node>
     </node>
+    <node name="Algorithms and data structures with python" unique_id="79" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613442047" ts_lastsave="1613446886">
+      <rich_text scale="h1">Introduction	</rich_text>
+      <rich_text>
+	</rich_text>
+      <rich_text scale="h1">Efficiency</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text scale="h2">		Actually using or taking advantage of everything on your computer</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text scale="h2">		Efficient code is the thing that you search as a programmer</rich_text>
+      <rich_text>
+	</rich_text>
+      <rich_text scale="h1">Algorithm</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text scale="h2">		Is a set of steps to do something</rich_text>
+      <rich_text>
+		
+	</rich_text>
+      <rich_text scale="h1">Notation</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text scale="h2">		BIG O notation</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text scale="h2">			O(Algebraic expression)</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text scale="h2">				Like O(N) N is the length of the input but also to especify the space efficiency</rich_text>
+      <rich_text>
+				
+	</rich_text>
+      <rich_text scale="h1">We use pseudo code to see what are we going to do</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text scale="h2">		Like a for with n repetitions</rich_text>
+      <rich_text>
+		
+</rich_text>
+      <rich_text scale="h1">	Approximation</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text scale="h2">		We want to minimize the computation time and calculate the time we need to execute the code</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text scale="h2">		We talk about efficiency using the worst case escenario</rich_text>
+      <node name="List-Based Collections" unique_id="80" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613446886" ts_lastsave="1613450107">
+        <rich_text scale="h1">Collections</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h2">	They don't have any kind of order</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h2">	They have multiple types of objects in them</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h2">	Data structures are the ones that decide any of this</rich_text>
+        <rich_text>
+	
+</rich_text>
+        <rich_text scale="h1">Lists</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h2">	They are ordered</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h2">	The objects in it are related</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h2">	There is no fixed lenght</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h1">   ◇ Arrays are the most basic type of lists available in programming languages</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h2">      ▪ The power of arrays depends on the language you're using them</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h2">      ▪They have a fixed size but this depends on the language</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h2">      ▪ Arrays  have indexes to tell the position of the elements inside them</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h2">      ▪ Insertion is difficult in arrays if you want to insert something between elements also deleting has this problem</rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text scale="h1">   ◇ Linked Lists</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h2">      ▪ Is an extension of a list</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h2">      ▪ It has order but it doesn't have indexes</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h2">      ▪ They are related by its links not by index</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h2">      ▪ They know what elements is next and behind them</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h2">      ▪ It solves the problem of deleting and inserting elements</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h2">         - A linked list stores in a way that it doesn't used indexes with numbers
+            → it actually saves a reference to the next or the element behind the element you are standing in</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h2">            → So it saves references or memory addresses of the elements beside it</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h2">            → You practically hop from element to the next</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h2">            → It takes constant time to insert cause you hop and jump between the pointers</rich_text>
+      </node>
+    </node>
   </node>
+  <node name="Computer Graphics" unique_id="81" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613534201" ts_lastsave="1613534201"/>
   <node name="Blender" unique_id="32" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611356228" ts_lastsave="1611377303">
     <rich_text scale="h1">Little shortcuts notes</rich_text>
     <rich_text>
