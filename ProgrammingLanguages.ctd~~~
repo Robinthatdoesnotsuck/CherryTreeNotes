@@ -2772,7 +2772,7 @@ plt.show()</codebox>
           </node>
         </node>
         <node name="Loss functions" unique_id="62" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613061927" ts_lastsave="1613062080">
-          <node name="Linear classifiers: the coefficients" unique_id="68" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613062080" ts_lastsave="1614113312">
+          <node name="Linear classifiers: the coefficients" unique_id="68" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613062080" ts_lastsave="1614113882">
             <rich_text scale="h1">Linear Classifiers</rich_text>
             <rich_text>
 </rich_text>
@@ -2814,7 +2814,35 @@ plt.show()</codebox>
       ▪ 
 </rich_text>
             <rich_text scale="h2">      ▪ this is the raw model output of every X in a model</rich_text>
+            <rich_text>
+</rich_text>
+            <rich_text scale="h2">      ▪ The prediction equation will gives us the value of the output so it depends of the sign of the value to know we're we at in the boundaries</rich_text>
+            <rich_text>
+
+</rich_text>
+            <rich_text link="webs https://campus.datacamp.com/courses/linear-classifiers-in-python/loss-functions?ex=3" scale="h1">Changing the model coefficients</rich_text>
+            <rich_text>
+</rich_text>
+            <rich_text scale="h3">When you call </rich_text>
+            <rich_text family="monospace" scale="h3">fit</rich_text>
+            <rich_text scale="h3"> with scikit-learn, the logistic regression coefficients are automatically learned from your dataset. In this exercise you will explore how the decision boundary is represented by the coefficients. To do so, you will change the coefficients manually (instead of with </rich_text>
+            <rich_text family="monospace" scale="h3">fit</rich_text>
+            <rich_text scale="h3">), and visualize the resulting classifiers.</rich_text>
+            <rich_text>
+
+
+</rich_text>
             <codebox char_offset="576" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="python" highlight_brackets="1" show_line_numbers="1"> logistic_regression.coef_@ x[10] + logistic.intercept_</codebox>
+            <codebox char_offset="1148" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="python" highlight_brackets="1" show_line_numbers="1"># Set the coefficients
+model.coef_ = np.array([[1,0]])
+model.intercept_ = np.array([0])
+
+# Plot the data and decision boundary
+plot_classifier(X,y,model)
+
+# Print the number of errors
+num_err = np.sum(y != model.predict(X))
+print("Number of errors:", num_err)</codebox>
           </node>
           <node name="What is a loss function" unique_id="71" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613062120" ts_lastsave="1613062134"/>
           <node name="Loss function diagrams" unique_id="72" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613062134" ts_lastsave="1613062134"/>
